@@ -3,5 +3,7 @@
 @section('title', 'Home')
 
 @section('mainContent')
-    <h3>Sono il main content!</h3>
+    @foreach ($movies as $movie)
+        @include('includes/movie/card', $movie)
+    @endforeach
 @endsection
