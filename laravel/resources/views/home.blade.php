@@ -4,6 +4,6 @@
 
 @section('mainContent')
     @foreach ($movies as $movie)
-        @include('includes/movie/card', $movie)
+        @include('includes.movie.card', $movie)
     @endforeach
 @endsection
